@@ -82,7 +82,7 @@ switch(food){
 }
 }seaFood();
 
-function cosemetics(){
+function cosmetics(){
 let makeup = prompt('Do you think I like makeup?')
 makeup = makeup.toLowerCase();
     switch(makeup){
@@ -99,7 +99,7 @@ makeup = makeup.toLowerCase();
       console.log('Think again')
          alert('Think again');
     } 
-}cosemetics();
+}cosmetics();
 
 
 function ageGuess(){
@@ -111,20 +111,20 @@ alert('Yes. Corect!')
 score++;
 break;
 }
-else if(Number(age) < 28){
+else if(Number(age) < 26){
     console.log('Try a higer number')
     age = prompt('Try a higher number')
 
 
 }
-else if(Number(age) > 28){
+else if(Number(age) > 26){
     console.log('Try a lesser number')
     age = prompt('Try a lesser number')
 
 
 }
  if(i === 2){
-   alert('My age is 28')
+   alert('My age is 26')
  }   
 }
 }ageGuess();
@@ -134,8 +134,8 @@ else if(Number(age) > 28){
 
 
 function favNumber (){
-let specialNumbers = prompt('What do you think my favourite years are?')
-let correctAnswers = [2017, 2018, 2019];
+let specialNumbers = prompt('what are the years that carried special memories for me?')
+let correctAnswers = [2013, 2015, 2009];
 
 for(let i = 0; i < 5; i++ ){
     if(Number(specialNumbers) === correctAnswers[0] || Number(specialNumbers) === correctAnswers[1] || Number(specialNumbers) === correctAnswers[2]){
@@ -152,7 +152,7 @@ else {
 }
 
  if(i === 4){
-   alert('My favourites numbers are 1 , 2 and 3')
+   alert('My special memories where in the years : 2013,2015,2009')
  }   
 
  
