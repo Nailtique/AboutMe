@@ -1,4 +1,11 @@
 # AboutMe
+
+Navigator: Srah Zayadneh
+Driver: Ghadeer Khasawneh
+
+We worked together to enhance the codes and then wrapp them in functions. 
+
+
 This is a game to learn about me and ask me questions!
 Todays learning was a great one :
 we started with a revision with the codes of the other students, went through the diffuculties

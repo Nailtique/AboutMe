@@ -4,8 +4,8 @@ let userName = prompt("Hello! Introduce yourself")
 alert('Hello ' + userName + ' You are welcomed!')
 alert("I hope you will have fun browsing this website " + userName);
 
+function intro(){
 let introduction = prompt('Do you think I am human?');
-introduction = introduction.toLowerCase();
 if(introduction === 'yes' || introduction === 'y')
 {
     console.log('Yes. You are right!')
@@ -18,10 +18,12 @@ alert('No.I am human')
      console.log('try one more timet')
     alert('try one more time')
 
-};
+}}
+intro();
 
+function swimming(){
 let sport = prompt('Do you think I can swim?')
-sport = gender.toLowerCase();
+sport = sport.toLowerCase();
 if (sport === 'yes' || sport ==='y'){
     console.log('Yes. You are right')
     alert('Yes. You are right!')
@@ -35,13 +37,15 @@ if (sport === 'yes' || sport ==='y'){
     alert ('Try one more time')
 
 }
+};
+swimming();
 
 
 
 
 
 
-
+function read(){
 let reading = prompt('Do you think I enjoy reading?')
 reading = reading.toLowerCase();
 if(reading === 'yes' || reading === 'y'){
@@ -56,10 +60,10 @@ alert('Error')
    console.log('That is not an expected answer')
     alert('That is not an expected answer')
 }
+} read();
 
 
-
-
+function seaFood(){
 let food = prompt('Do you think my favourite food is sea food?')
 food = food.toLowerCase();
 switch(food){
@@ -75,7 +79,10 @@ switch(food){
     default :
      console.log('Answers are yes or no')
             alert('Answers are yes or no');
+}
+}seaFood();
 
+function cosemetics(){
 let makeup = prompt('Do you think I like makeup?')
 makeup = makeup.toLowerCase();
     switch(makeup){
@@ -91,11 +98,11 @@ makeup = makeup.toLowerCase();
         default :
       console.log('Think again')
          alert('Think again');
-            
+    } 
+}cosemetics();
 
 
-
-
+function ageGuess(){
 let age = prompt('Can you guess my age?')
 for(let i = 0; i < 3; i++ ){
     if(Number(age) === 28){
@@ -120,24 +127,25 @@ else if(Number(age) > 28){
    alert('My age is 28')
  }   
 }
+}ageGuess();
 
 
 
 
 
 function favNumber (){
-let languages = prompt('Can you guess one of my favourite numbers?')
-let correctAnswers = [1, 2, 3];
+let specialNumbers = prompt('What do you think my favourite years are?')
+let correctAnswers = [2017, 2018, 2019];
 
 for(let i = 0; i < 5; i++ ){
-    if(Number(languages) === correctAnswers[0] || Number(languages) === correctAnswers[1] || Number(languages) === correctAnswers[2]){
+    if(Number(specialNumbers) === correctAnswers[0] || Number(specialNumbers) === correctAnswers[1] || Number(specialNumbers) === correctAnswers[2]){
 alert('Yes. Correct!')
 console.log('Yes. Correct!')
 score++;
 break;
 }
 else {
-    languages = prompt('Try another answer')
+    specialNumbers = prompt('Try another answer')
     console.log('Try another time')
 
 
@@ -146,9 +154,10 @@ else {
  if(i === 4){
    alert('My favourites numbers are 1 , 2 and 3')
  }   
- alert('Your score is ' + score)
+
  
 
 
-}}}}
+}}
 favNumber();
+alert('Your score is ' + score)
