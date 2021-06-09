@@ -15,7 +15,7 @@ if(introduction === 'yes' || introduction === 'y')
      console.log('No.I am human')
 alert('No.I am human')
 }else {
-     console.log('try one more timet')
+     console.log('try one more time')
     alert('try one more time')
 
 }}
